@@ -37,14 +37,15 @@ namespace BigSchool.Controllers
                 viewModel.Categories = _dbContext.Categories.ToList();
             };
             return View("Create",viewModel);
-            var course = new Course
+            var Course = new Course
             {
                 LecturerId = User.Identity.GetUserId(),
-                datetime = viewModel.GetDateTime(),
                 CategoryId = viewModel.Category,
+                datetime = viewModel.GetDateTime(),
                 Place = viewModel.Place,
+                
             };
-            _dbContext.Courses.Add(course);
+            _dbContext.Courses.Add(Course);
             _dbContext.SaveChanges();
             return RedirectToAction("Index", "Home");
         }
