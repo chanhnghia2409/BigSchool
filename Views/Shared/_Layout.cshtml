@@ -25,10 +25,6 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Add course", "Create", "Courses")</li>
                     <li>
-                      @using (Html.BeginForm("Index", "Home", FormMethod.Get, new { @class = "form-control", style="margin-top: 10px;" }))
-                      {
-                          @Html.TextBox("searching")<input type="submit" value="Search" style="border: 0; background-color:aqua;"/>
-                      }
                     </li>
                 </ul>
                 @Html.Partial("_LoginPartial")

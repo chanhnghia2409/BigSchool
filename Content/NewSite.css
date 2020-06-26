@@ -4,7 +4,7 @@
 }
 
 .navbar-inverse {
-    background-color: azure;
+    background-color: blue;
     border-color: white;
 }
 
@@ -40,7 +40,7 @@ ul {
     margin-bottom: 5%;
     width: 30%;
     height: 100px;
-    background-color: azure;
+    background-color: cadetblue;
     border-radius: 0.5em;
  }
 
@@ -56,7 +56,7 @@ ul {
 
  .course > li > .details {
 
-     color: black;
+     color: white;
      position: absolute;
      top: 0;
      left: 90px;
